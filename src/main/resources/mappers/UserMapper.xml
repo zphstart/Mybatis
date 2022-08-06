@@ -17,7 +17,7 @@
         select * from t_user where id =1;
     </select>
 
-    <select id="selectUsers" resultType="com.zph.mybatis.pojo.User">
+    <select id="selectUsers" resultType="user">
         select * from t_user
     </select>
 </mapper>

@@ -24,6 +24,12 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mappers/UserMapper.xml"/>
+<!--        配置单个映射文件-->
+<!--        <mapper resource="mappers/UserMapper.xml"/>-->
+<!--        以包为单位添加映射文件
+            1.映射文件包名必须与mapper接口的包名一致
+            2.mapper接口与映射文件名字一致
+-->
+        <package name="com.zph.mybatis.mapper"/>
     </mappers>
 </configuration>

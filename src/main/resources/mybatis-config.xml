@@ -7,7 +7,10 @@
     <properties resource="jdbc.properties"></properties>
 <!--    给数据库映射对象起别名-->
     <typeAliases>
-        <typeAlias type="com.zph.mybatis.pojo.User" alias="user"></typeAlias>
+<!--        将单个类起别名-->
+<!--        <typeAlias type="com.zph.mybatis.pojo.User" alias="user"></typeAlias>-->
+<!--        以包为单位，将包下所有类启用别名，别名类类名（不区分大小写）-->
+        <package name="com.zph.mybatis.pojo"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">

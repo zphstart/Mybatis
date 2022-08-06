@@ -6,4 +6,18 @@
     <insert id="insertUser">
         insert into t_user values(null,"张三","123456","山西","12345678912");
     </insert>
+    <delete id="deleteUser">
+        delete from t_user where id = 10;
+    </delete>
+    <update id="updateUser">
+        update t_user t set t.name = "李四" where id=11;
+    </update>
+
+    <select id="selectUser" resultType="com.zph.mybatis.pojo.User">
+        select * from t_user where id =1;
+    </select>
+
+    <select id="selectUsers" resultType="com.zph.mybatis.pojo.User">
+        select * from t_user
+    </select>
 </mapper>

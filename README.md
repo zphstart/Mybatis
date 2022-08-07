@@ -34,3 +34,7 @@ mybatis练习
         insert into t_user values(null,'张三','123456','北京','12233445566')
     </insert>
   ```
+  9. 解决数据库字段名与实体类属性名不一致的映射问题
+  - 在sql语句中给不一致的字段起别名
+  - 在mybatis-config核心配置文件中配置settings（全局配置），mapUnderscoreToCamelCase，开启下划线与驼峰映射
+  
